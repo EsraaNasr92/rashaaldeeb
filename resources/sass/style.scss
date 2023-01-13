@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'KG Second Chances Solid';
+    src: url('/../fonts/KGSecondChancesSolid.eot');
+    src: url('/../fonts/KGSecondChancesSolid.eot?#iefix') format('embedded-opentype'),
+        url('/../fonts/KGSecondChancesSolid.woff2') format('woff2'),
+        url('/../fonts/KGSecondChancesSolid.woff') format('woff'),
+        url('/../fonts/KGSecondChancesSolid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KG Second Chances Sketch';
+    src: url('/../fonts/KGSecondChancesSketch.eot');
+    src: url('/../fonts/KGSecondChancesSketch.eot?#iefix') format('embedded-opentype'),
+        url('/../fonts/KGSecondChancesSketch.woff2') format('woff2'),
+        url('/../fonts/KGSecondChancesSketch.woff') format('woff'),
+        url('/../fonts/KGSecondChancesSketch.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+$primary-color: #0050A6;
+$secondray-color: #FF00FF;
+$shadow-color: #00FFFF;
+
+$primary-font: 'KG Second Chances Solid';
+$font-shadow: 'KG Second Chances Sketch';
+
+/* Header section */
+.header_section {
+    margin-top: 16px;
+}
+
+.header_section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.top_btn{
+    background-image: url('/images/contact-bg.png');
+    background-repeat: no-repeat;
+    width: 156px;
+    height: 68px;
+    position: absolute;
+    left: -7px;
+}
+
+.top_btn-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    background: $secondray-color ;
+    padding: 16px 24px;
+    border-radius: 60px;
+}
+
+.menu img {
+    display: flex;
+    padding-top: 6.34px;
+    margin-left: 80px;
+}
+
+/* Banner section */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 172px;
+}
+
+.banner_left-section h1 {
+    font-size: 64px;
+    font-weight: 400;
+    color: #0050A6;
+    font-family: $primary-font;
+}
+
+.banner_left-section_title {
+    position: relative;
+}
+
+.banner_left-section_shadow, .banner_left-section_shadow_second,
+.banner_left-section_shadow_third{
+    font-family: $font-shadow !important;
+    position: absolute;
+    left: 15px;
+    top: 370px;
+    color: $shadow-color !important;
+    z-index: -1;
+}
+.banner_left-section_shadow_second {
+    top: 494px;
+    left: 104px;
+}
+
+.banner_left-section_shadow_third {
+    top: 494px;
+    left: 524px;
+}
+
+.banner_right-section{
+    padding-top: 125px;
+}
